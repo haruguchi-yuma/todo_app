@@ -1,0 +1,101 @@
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+body {
+  font-size: 24px;
+}
+
+.container {
+  width:800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  font-size: 38px;
+}
+
+.marker {
+  width: 100%;
+  height: 35%;
+  background-color: #a2a2a270;
+  position: absolute;
+  bottom: 5%;
+  z-index: -1;
+}
+
+button {
+  display: inline-block;
+}
+
+input {
+  width: 60%;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+/* todoリスト部分 */
+table{
+  border-collapse:collapse;
+  margin:0 auto;
+}
+
+th{
+  color:#005ab3;
+}
+
+td{
+  border-bottom:1px dashed #999;
+}
+
+th,tr:last-child td{
+  border-bottom:2px solid #005ab3;
+}
+
+td,th{
+  padding:5px;
+}
+
+.status {
+  width: 20%
+}
+
+tr td  input {
+  width: 100%;
+}
+
+tr td {
+  text-align: left;
+}
+
+.todoName {
+  width: 400px;
+  text-align: left;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: #c0c0c0;
+}
+
+.todoList div.editing .view {
+  display: none;
+}
+
+.todoList div.editing .edit {
+  display: block;
+}
+
+.todoList div .edit {
+  display: none;
+}
