@@ -32,9 +32,10 @@
           </tr>
         </thead>
         <tbody>
-          <!-- 作成したtodoの一覧 -->
           <tr v-for="todo in todos" :key="todo.id">
-            <td><input type="checkbox" @click="todo.done = !todo.done"></td>
+            <div class="checkbox">
+              <td><input type="checkbox" @click="todo.done = !todo.done"></td>
+            </div>
             <td>
               <div :class="{'complete': todo.done, editing: todo == editedTodo}">
                 <span class="view" @dblclick="editTodo(todo)">{{ todo.body }}</span>

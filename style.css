@@ -66,9 +66,12 @@ td,th{
   width: 20%
 }
 
-.checkbox {
-  width: 28px;
-  height: 28px;
+tr td  input {
+  width: 100%;
+}
+
+tr td {
+  text-align: left;
 }
 
 .todoName {
